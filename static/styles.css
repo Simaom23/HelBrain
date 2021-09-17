@@ -1,0 +1,73 @@
+/*
+color pallete:
+#104C91
+#EFC9AF
+#1F8AC0
+*/
+
+.navbar-custom {
+  background-color: rgba(239, 201, 175, 1);
+}
+
+.main-color {
+  background-color: rgba(31, 138, 192, 0.5);
+}
+
+.navbar-font {
+  color: rgba(16, 76, 145, 1);
+}
+
+.navbar-font::hover {
+  transform: rotate(10deg);
+}
+
+.nav .navbar-brand {
+  /* size for brand */
+  font-size: xx-large;
+}
+
+.gradient {
+  background: linear-gradient(
+      to right,
+      rgba(239, 201, 175, 1),
+      rgba(16, 76, 145, 1)
+    ),
+    url(https://grainy-gradients.vercel.app/noise.svg);
+}
+
+main .form-control {
+  /* Center form controls */
+  display: inline-block;
+
+  /* Override Bootstrap's 100% width for form controls */
+  width: auto;
+}
+
+main {
+  /* Scroll horizontally as needed */
+  overflow-x: auto;
+
+  /* Center contents */
+  text-align: center;
+}
+
+main img {
+  /* Constrain images on small screens */
+  max-width: 100%;
+}
+
+table {
+  background-color: transparent;
+  margin-bottom: 1rem;
+  width: 100%;
+}
+
+table th,
+table td {
+  padding: 0.6rem;
+  vertical-align: middle;
+}
+
+tbody tr:nth-of-type(odd) {
+  background-color: rgb(83, 127, 190, 0.3);
+}
