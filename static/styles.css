@@ -4,6 +4,9 @@ color pallete:
 #EFC9AF
 #1F8AC0
 */
+body {
+  font-family: "Montserrat", sans-serif;
+}
 
 .navbar-custom {
   background-color: rgba(239, 201, 175, 1);
@@ -25,6 +28,25 @@ color pallete:
   /* size for brand */
   font-size: xx-large;
 }
+.nav-item {
+  transition-duration: 0.4s;
+}
+
+.nav-item:hover {
+  transform: translateY(-10%);
+  font-size: 20px;
+  background: -webkit-linear-gradient(#efc9af, #1f8ac0);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  transition-duration: 0.7s;
+}
+
+.quote {
+  padding-top: 30px;
+  font-size: 40px;
+  font-family: "Playfair Display", serif;
+  text-align: left;
+}
 
 .gradient {
   background: linear-gradient(
@@ -33,6 +55,19 @@ color pallete:
       rgba(16, 76, 145, 1)
     ),
     url(https://grainy-gradients.vercel.app/noise.svg);
+  border: none;
+}
+.card {
+  /* Center form controls */
+  display: inline-block;
+  width: auto;
+  border-radius: 30px;
+  background: linear-gradient(
+    142.14deg,
+    #efc9af 0%,
+    rgba(239, 201, 175, 0) 100%
+  );
+  border: none;
 }
 
 main .form-control {
