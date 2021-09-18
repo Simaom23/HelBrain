@@ -32,7 +32,7 @@ app.config["SESSION_TYPE"] = "filesystem"
 Session(app)
 
 # Configure SQLite database
-#db = sqlite3.connect("sqlite:///app.db")
+# db = sqlite3.connect("sqlite:///app.db")
 
 
 def login_required(f):
@@ -49,12 +49,26 @@ def register():
     return render_template("register.html")
 
 
-@app.route("/login", methods=["GET", "POST"])
+@app.route("/user-register", methods=["GET", "POST"])
+def user_register():
+    return render_template("user-register.html")
+
+
+@app.route("/helper-register", methods=["GET", "POST"])
+def helper_register():
+    return render_template("helper-register.html")
+
+
+@ app.route("/login", methods=["GET", "POST"])
 def login():
     return render_template("login.html")
 
 
-@app.route("/")
-@login_required
-def index():
-    return render_template("index.html")
+@ app.route("/helper-index")
+def helper_index():
+    return render_template("helper-index.html")
+
+
+@ app.route("/user-index")
+def user_index():
+    return render_template("user-index.html")
