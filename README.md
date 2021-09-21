@@ -1,2 +1,2 @@
-# cs50-Project
- cs50's Final Project
+# HelBrain
+ Helbrain is Web-Based application using JavaScript, Python, HTML, CSS and SQL. This project was designed for CS50's final project. 
