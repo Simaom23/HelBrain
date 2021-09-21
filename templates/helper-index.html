@@ -6,9 +6,15 @@
 
 {% block main %}
 <div class="form-group">
-    <div class="quote"> Helping Status </div>
-</div>   
+    <div class="title"> Welcome,  </div>
+</div>
+
+<div class="form-group">
+    <div class="title"> Helping Status </div>
+    <div class="title"> Rating: </div>
+</div>
 <div class="form-group">  
+    <div class="title"> Post a note </div>
     <form action="/user-index" method="post">
         <input autocomplete="off" autofocus class="form-control" name="note" placeholder="Note" type="text">
         <input autocomplete="off" autofocus class="form-control" name="email" placeholder="Email" type="text">
