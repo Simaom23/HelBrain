@@ -1,0 +1,8 @@
+{
+  "cmake.configureOnOpen": false
+}
+
+},
+"files.associations": {
+    "*.html": "html"
+}
