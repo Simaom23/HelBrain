@@ -14,4 +14,15 @@ SQLite
 Figma
 ```
 
+#### Features:
+Advisers:
+- See their ratings
+- Send notes to 
+Those searching for Advice:
+- Search for helpers:
+  - See their ratings
+  - Contact information
+- See notes received from helpers
+- Write their own notes
+
 #### Design Choices: 
