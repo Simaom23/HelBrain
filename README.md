@@ -16,9 +16,10 @@ Figma
 
 #### Features:
 Advisers:
-- See their ratings
-- Send notes to 
-Those searching for Advice:
+- See their own ratings
+- Send notes to those that are searching for advice
+
+Those searching for advice:
 - Search for helpers:
   - See their ratings
   - Contact information
