@@ -134,7 +134,9 @@ def helper_register():
 
     # User reached route via GET (as by clicking a link or via redirect)
     else:
-        return render_template("helper-register.html")
+        db.execute("SELECT name FROM specialty")
+        specialtys = db.fetchall()
+        return render_template("helper-register.html", specialtys=specialtys)
 
 
 @ app.route("/user-register", methods=["GET", "POST"])

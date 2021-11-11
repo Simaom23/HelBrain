@@ -3,6 +3,14 @@ block main %}
 <div class="form-group title">Start Helping</div>
 <div class="form-group card text-center">
   <div class="card-body">
+    <div class="form-group">
+      <select class="form-control">
+        <option disabled selected value="">Specialty</option>
+        {% for specialty in specialtys %}
+        <option>{{ specialty }}</option>
+        {% endfor %}
+      </select>
+    </div>
     <form action="/helper-register" method="post">
       <div class="form-group">
         <input
