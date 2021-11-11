@@ -5,18 +5,39 @@ block main %}
 </div>
 <div class="form-group">
   <form action="/user-index" method="post">
-    <input
-      autocomplete="off"
-      autofocus
-      class="form-control"
-      name="specialist"
-      placeholder="Specialists"
-      type="text"
-    />
+    <div class="form-group">
+      <select class="form-control">
+        <option disabled selected value="">Specialty</option>
+        {% for specialty in specialtys %}
+        <option>{{ specialty }}</option>
+        {% endfor %}
+      </select>
+    </div>
     <button class="btn btn-primary gradient" type="submit">Search</button>
   </form>
 </div>
-      {% endblock %}
-    </div>
-  </div>
+<div class="form-group">
+  <p></p>
+  <table>
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Email</th>
+        <th>Contact</th>
+        <th>Rating</th>
+      </tr>
+    </thead>
+    <tbody>
+      <!-- Loop through the database entries to display them in this table -->
+      <tr>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
 </div>
+{% endblock %}

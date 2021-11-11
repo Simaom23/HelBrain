@@ -68,6 +68,7 @@ main img {
 }
 
 .title:hover {
+  text-decoration: none;
   -webkit-mask-image: linear-gradient(
     -75deg,
     rgba(239, 201, 175, 0.6) 30%,
