@@ -16,14 +16,13 @@ Figma
 
 #### Features:
 Advisers:
-- See their own ratings
-- Send notes to those that are searching for advice
+- Register their contact information
 
 Those searching for advice:
 - Search for helpers:
-  - See their ratings
+  - Name
+  - Specialty
   - Contact information
-- See notes received from helpers
-- Write their own notes
+- Write their own notes to see later
 
 #### Design Choices: 
