@@ -3,13 +3,11 @@ main %}
 <div class="form-group">
   <div class="title">Welcome,</div>
 </div>
-
 <div class="form-group">
-  <div class="title">Helping Status</div>
-  <div class="title">Rating:</div>
+  <a class="title" href="/specialists">Search Helpers</a>
 </div>
 <div class="form-group">
-  <div class="title">Post a note</div>
+  <div class="title">Notes</div>
   <form action="/user-index" method="post">
     <input
       autocomplete="off"
@@ -19,15 +17,25 @@ main %}
       placeholder="Note"
       type="text"
     />
-    <input
-      autocomplete="off"
-      autofocus
-      class="form-control"
-      name="email"
-      placeholder="Email"
-      type="email"
-    />
     <button class="btn btn-primary gradient" type="submit">Post</button>
   </form>
+</div>
+<div class="form-group">
+  <div class="card text-center card-notes">
+    <div class="card-body">
+      <div class="notes-from">
+        From: John
+        <div />
+        <div class="notes-note">
+          Take your meds
+          <div />
+          <div class="notes-date">
+            07/05/2001
+            <div />
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
 </div>
 {% endblock %}

@@ -6,14 +6,27 @@ block main %}
 <div class="form-group">
   <form action="/user-index" method="post">
     <div class="form-group">
+      <input
+        class="form-control"
+        name="helpersname"
+        placeholder="Helpers Name"
+        type="password"
+      />
+      <button class="btn btn-primary gradient" type="submit">Search</button>
+    </div>
+  </form>
+</div>
+<div class="form-group">
+  <form action="/user-index" method="post">
+    <div class="form-group">
       <select class="form-control">
         <option disabled selected value="">Specialty</option>
         {% for specialty in specialtys %}
         <option>{{ specialty }}</option>
         {% endfor %}
       </select>
+      <button class="btn btn-primary gradient" type="submit">Search</button>
     </div>
-    <button class="btn btn-primary gradient" type="submit">Search</button>
   </form>
 </div>
 <div class="form-group">
