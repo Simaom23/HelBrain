@@ -1,14 +1,11 @@
-{% extends "layout.html" %} {% block title %} Portfolio {% endblock %} {% block
+{% extends "layout.html" %} {% block title %} Homepage {% endblock %} {% block
 main %}
 <div class="form-group">
-  <div class="title">Welcome,</div>
-</div>
-<div class="form-group">
-  <a class="title" href="/specialists">Search Helpers</a>
+  <div class="title">Welcome, {{ username }}</div>
 </div>
 <div class="form-group">
   <div class="title">Notes</div>
-  <form action="/user-index" method="post">
+  <form action="/homepage" method="post">
     <input
       autocomplete="off"
       autofocus
@@ -20,22 +17,15 @@ main %}
     <button class="btn btn-primary gradient" type="submit">Post</button>
   </form>
 </div>
+{% for note in notes %}
 <div class="form-group">
   <div class="card text-center card-notes">
     <div class="card-body">
-      <div class="notes-from">
-        From: John
-        <div />
-        <div class="notes-note">
-          Take your meds
-          <div />
-          <div class="notes-date">
-            07/05/2001
-            <div />
-          </div>
-        </div>
+      <div class="notes-note">
+        {{ note[2] }}
+        <div class="notes-date">{{ note[3] }}</div>
       </div>
     </div>
   </div>
 </div>
-{% endblock %}
+{% endfor %} {% endblock %}

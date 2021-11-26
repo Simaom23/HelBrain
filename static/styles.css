@@ -6,6 +6,9 @@ color pallete:
 */
 body {
   font-family: "Montserrat", sans-serif;
+  background-image: url("background.png");
+  background-position: center;
+  background-size: cover;
 }
 
 .navbar-custom {
@@ -139,36 +142,32 @@ main img {
   transition-duration: 0.7s;
 }
 
-.button-pill {
-  border: none;
-  transition-duration: 0.4s;
-  font-size: 15px;
-}
-
-.button-pill:hover {
-  transform: translateY(10%);
-  background: linear-gradient(
-    142.14deg,
-    #efc9af 0%,
-    rgba(239, 201, 175, 0) 100%
-  );
-  transition-duration: 1s;
-}
-
-.card-notes {
-}
-
-.notes-from {
-  font-size: 15px;
-  text-align: left;
-}
 .notes-note {
-  padding-top: 5px;
-  font-size: 12px;
-  text-align: left;
+  font-size: 20px;
+  text-align: center;
 }
 .notes-date {
-  padding-top: 5px;
-  font-size: 8px;
-  text-align: right;
+  padding-top: 6px;
+  font-size: 12px;
+  text-align: center;
+}
+
+table {
+  background-color: transparent;
+  margin-bottom: 1rem;
+  width: 100%;
+}
+
+table th,
+table td {
+  padding: 0.6rem;
+  vertical-align: middle;
+}
+
+tbody tr:nth-of-type(even) {
+  background-color: rgba(239, 201, 175, 1);
+}
+
+tbody tr:nth-of-type(odd) {
+  background-color: rgb(83, 127, 190, 0.3);
 }
