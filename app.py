@@ -306,8 +306,8 @@ def specialists():
         else:
             # Search helpers name on database
             if not request.form.get("specialty"):
-                db.execute("SELECT * FROM helpers JOIN specialtys ON specialtys.id = helpers.specialty_id WHERE helpers.name = ?",
-                           (request.form.get("helpersname"),))
+                db.execute("SELECT * FROM helpers JOIN specialtys ON specialtys.id = helpers.specialty_id WHERE UPPER(helpers.name) LIKE ?",
+                           ("%" + request.form.get("helpersname").upper() + "%",))
 
             # Search specialtys name on database
             elif not request.form.get("helpersname"):
@@ -315,8 +315,8 @@ def specialists():
                            (request.form.get("specialty"),))
 
             else:
-                db.execute("SELECT * FROM helpers JOIN specialtys ON specialtys.id = helpers.specialty_id WHERE specialtys.name = ? AND helpers.name = ?",
-                           (request.form.get("specialty"), request.form.get("helpersname"),))
+                db.execute("SELECT * FROM helpers JOIN specialtys ON specialtys.id = helpers.specialty_id WHERE specialtys.name = ? AND UPPER(helpers.name) LIKE ?",
+                           (request.form.get("specialty"), "%" + request.form.get("helpersname").upper() + "%",))
             data = db.fetchall()
             helpers = clean_data(data)
 
