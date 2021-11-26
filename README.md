@@ -45,3 +45,6 @@ The Web-App has 5 significant design features:
 - Users can take notes that will be stored in the database
 
 Only the users can log in the app. The initial idea was do make a chat and rating system in the app but i did not have the time to make it and with these choice in mind i decided that the helpers could only register their contact information to be contacted outside the platform.
+
+#### Conclusion
+This project helped consolidate every concept learned during this course and even improve my hability to learn for myself.
