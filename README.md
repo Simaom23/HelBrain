@@ -1,6 +1,6 @@
 # HelBrain
 
-<img src="preview/Login.png"></img>
+<img src="preview/Login.png">
 
 #### Video Demo:
 
@@ -27,7 +27,7 @@ Users:
   - Contact information
 - Write their own notes to see later
 
-<img src="preview/Specialists.png"></img>
+<img src="preview/Specialists.png">
 
 #### Design Choices: 
 The Web-App has 5 significant design features:
