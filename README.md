@@ -43,4 +43,5 @@ The Web-App has 5 significant design features:
   - Search for specialty
 - Users can change their password
 - Users can take notes that will be stored in the database
+
 Only those who are searching for help can log in the app. The initial idea was do make a chat and rating system in the app but i did not have the time to make it and with these choice in mind i decided that the helpers could only register their contact information to be contacted outside the platform.
