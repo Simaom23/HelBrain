@@ -27,7 +27,7 @@ Users:
   - Specialty
   - Contact information
 - Write their own notes to see later
-- 
+
 #### Specialists Preview
 ![](preview/Specialists.PNG)
 
